@@ -5,12 +5,12 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.mvvmwithretrofit.model.movie.MoviesList
 import com.example.mvvmwithretrofit.model.movieDetail.MovieDeatils
-import com.example.mvvmwithretrofit.repository.QuoteRepository
+import com.example.mvvmwithretrofit.repository.MovieRepository
 import com.example.mvvmwithretrofit.repository.Response
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class MainViewModel(private val repository: QuoteRepository) : ViewModel() {
+class MainViewModel(private val repository: MovieRepository) : ViewModel() {
 
     init {
         viewModelScope.launch(Dispatchers.IO) {

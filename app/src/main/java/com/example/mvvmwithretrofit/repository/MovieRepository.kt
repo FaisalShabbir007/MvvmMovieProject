@@ -8,7 +8,7 @@ import com.example.mvvmwithretrofit.model.movieDetail.MovieDeatils
 import com.example.mvvmwithretrofit.util.Constants.Companion.API_KEY
 import java.lang.Exception
 
-class QuoteRepository(private val movieService: MovieService) {
+class MovieRepository(private val movieService: MovieService) {
 
     private val moviesLiveData = MutableLiveData<Response<MoviesList>>()
     private val movieDetailLiveDate = MutableLiveData<Response<MovieDeatils>>()
